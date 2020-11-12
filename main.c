@@ -145,12 +145,14 @@ int main(int argc, char *argv[]) {
 	#endif
 
 	DPRINTF("Starting proxy...\n");
-	int delay = 10;
-    while (1)
-	{
+	// int delay = 10;
+    	// while (1) 
+	// {
 		tryConnect(ip, token);
-		DPRINTF("Error, waiting %d seconds and trying again.\n", delay);
-		sleep(delay);
-	}
+		// DPRINTF("Error, waiting %d seconds and trying again.\n", delay);
+		DPRINTF("main error");
+		exit(1);
+	//	sleep(delay);
+	//}
 }
 
