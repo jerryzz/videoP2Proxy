@@ -54,13 +54,6 @@ extern "C" void* min(void *) {
 
 		announceStream(rtspServer, sms, streamName, inputFileName);
 	}
-	/*
-	if (rtspServer->setUpTunnelingOverHTTP(80) || rtspServer->setUpTunnelingOverHTTP(8000) || rtspServer->setUpTunnelingOverHTTP(8080)) {
-		*env << "(Using port " << rtspServer->httpServerPortNum() << " for optional RTSP-over-HTTP tunneling.)\n";
-	} else {
-		*env << "(RTSP-over-HTTP tunneling is not available.)\n";
-	}
-	*/
 	*env << "\n";
 
 	env->taskScheduler().doEventLoop();
